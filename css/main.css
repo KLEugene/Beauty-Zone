@@ -1,3 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--beauty-landing-2-c1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  display: inline-block;
+}
+
+.list {
+  text-decoration: none;
+}
+
 :root {
   --bakery-landing-1-background: #faf4ea;
   --bakery-landing-1-s1: #31261a;
@@ -22,4 +62,23 @@
   --dog-landing-3-s8: #f9f9ff;
   --dog-landing-3-c9: #d9a6ff;
   --dog-landing-3-c10: #ff6e9f;
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Poppins", sans-serif;
+  --third-family: "Play", sans-serif;
+}
+
+.text-color {
+  color: var(--beauty-landing-2-s2);
+}
+
+.title-text {
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 64px;
+  color: var(--beauty-landing-2-c1);
+  text-transform: capitalize;
+}
+
+.title-center {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

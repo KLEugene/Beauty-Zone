@@ -1,1 +1,40 @@
-#
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+color: var(--beauty-landing-2-c1);
+
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  display: inline-block;
+}
+
+.list{
+    text-decoration: none;
+}
