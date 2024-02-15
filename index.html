@@ -11,18 +11,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <!-- logo space -->
+    <header class="header">
+      <nav>
+        <img src="" alt="logo">
       <ul class="hero__menu list">
-        <li>Про нас</li>
-        <li>Чому ми</li>
-        <li>Наші процедури</li>
-        <li>Контакти</li>
-        <li>#call</li>
-        <li>#facebook</li>
-        <li>#instagram</li>
+        <li><a href="#preview">Про нас</a></li>
+        <li><a href="#achievments">Чому ми</a></li>
+        <li><a href="#our-servises">Наші процедури</a></li>
+        <li><a href="#contacts">Контакти</a></li>        
       </ul>
-      
+      </nav>
+      <div>
+        <a href="tel:+380960000007"><img src="" alt="tel"/></a>
+        <a href="#"><img src="" alt="facebook"/></a>
+        <a href="#"><img src="" alt="instagram"/></a>
+      </div>
     </header>
     <main>
       <section id="hero">
@@ -67,20 +70,32 @@
       </section>
       <section id="contacts">
         <h2 class="title-text title-center">Як нас <span class="text-color">знайти</span></h2>
-        <!-- map space -->
+        <!-- map space --> 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325734713525!2d30.515600376478005!3d50.44235657159059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2sTarasa%20Shevchenko%20Blvd%2C%205%2C%20Kyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sen!2suk!4v1708026680781!5m2!1sen!2suk" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <form action=""></form>
       </section>
     </main>
     <footer>
       <!-- logo space -->
-      <ul class="footer-section__menu">
-        <li>Про нас</li>
-        <li>Чому ми</li>
-        <li>Наші процедури</li>
-        <li>Контакти</li>
+      <ul class="footer-section__menu list">
+        <li><a href="#preview">Про нас</a></li>
+        <li><a href="#achievments">Чому ми</a></li>
+        <li><a href="#our-servises">Наші процедури</a></li>
+        <li><a href="#contacts">Контакти</a></li>
+        
       </ul>
       <address class="footer-section__address">
-
+        <ul class="list">
+          <li><a href="tel:+380960000007">+38 (096)000 00 07</a></li>
+          <li><a href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a></li>
+          <li><a href="https://maps.app.goo.gl/gB1aeAkSMVpX93CS6" target="_blank">Україна, м. Київ, вул. Тараса Шевченка 5</a></li>
+        </ul>
+        <ul class="list">
+          <li><a href="#">#call</a></li>
+          <li><a href="#">#facebook</a></li>
+          <li><a href="#">#instagram</a></li>
+        </ul>
       </address>
       
     </footer>
