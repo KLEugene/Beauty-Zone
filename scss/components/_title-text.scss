@@ -1,12 +1,17 @@
-.title-text{
+.title-text {
+  
+  font-weight: 500;
+  font-size: 32px;
+ 
+  @media screen and (min-width: 768px) {
     font-family: var(--third-family);
-font-weight: 700;
-font-size: 64px;
-color: var(--beauty-landing-2-c1);
-text-transform: capitalize;
-
+    font-weight: 700;
+    font-size: 64px;
+    
+    
+  }
 }
 
-.title-center{
-    text-align: center;
+.title-center {
+  text-align: center;
 }

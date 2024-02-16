@@ -77,11 +77,15 @@ a:hover {
 }
 
 .title-text {
-  font-family: var(--third-family);
-  font-weight: 700;
-  font-size: 64px;
-  color: var(--beauty-landing-2-c1);
-  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 32px;
+}
+@media screen and (min-width: 768px) {
+  .title-text {
+    font-family: var(--third-family);
+    font-weight: 700;
+    font-size: 64px;
+  }
 }
 
 .title-center {
@@ -93,4 +97,44 @@ a:hover {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.hero__descrition {
+  font-size: 12px;
+  line-height: 150%;
+}
+@media screen and (min-width: 768px) {
+  .hero__descrition {
+    font-size: 18px;
+  }
+}
+.hero__text {
+  font-size: 11px;
+  line-height: 164%;
+  text-align: center;
+  color: var(--beauty-landing-2-c3);
+}
+@media screen and (min-width: 768px) {
+  .hero__text {
+    font-size: 12px;
+    line-height: 150%;
+  }
+}
+.hero__title {
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 85%;
+  text-transform: capitalize;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 140px;
+    line-height: 81%;
+  }
+}
+
+.preview__accent {
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
