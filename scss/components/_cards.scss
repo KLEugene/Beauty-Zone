@@ -1,0 +1,16 @@
+.card-list{
+
+}
+
+.card{
+
+
+    &__text{
+        font-size: 20px;
+        text-align: center;
+        color: var(--beauty-landing-2-background);
+        @media screen and (min-width:768px) {
+            font-size: 22px;
+        }
+    }
+}

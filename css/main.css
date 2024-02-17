@@ -92,6 +92,32 @@ a:hover {
   text-align: center;
 }
 
+.card__text {
+  font-size: 20px;
+  text-align: center;
+  color: var(--beauty-landing-2-background);
+}
+@media screen and (min-width: 768px) {
+  .card__text {
+    font-size: 22px;
+  }
+}
+
+.logo {
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 94%;
+  text-transform: capitalize;
+  color: var(--beauty-landing-2-s2);
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 22px;
+    line-height: 95%;
+  }
+}
+
 .header {
   padding: 32px 100px;
   position: absolute;
