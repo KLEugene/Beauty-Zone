@@ -1,4 +1,13 @@
 .hero {
+  padding: 72px 20px;
+  background-image: url('../images/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media screen and (min-width: 768px) {
+  padding: 122px;
+  
+  }
+
   &__descrition {
     font-size: 12px;
     line-height: 150%;
