@@ -1,0 +1,15 @@
+.button {
+  border-radius: 24px;
+  padding: 16px 24px;
+  border: none;
+  background: var(--beauty-landing-2-s2);
+
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--beauty-landing-2-background);
+  margin-bottom: 8px;
+  @media screen and (min-width:768px) {
+    margin-bottom: 14px;
+    font-size: 18px;
+  }
+}
