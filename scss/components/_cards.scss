@@ -1,16 +1,32 @@
 .card-list{
-
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+    @media screen and (min-width:768px) {
+       flex-direction: row; 
+       gap:56px;
+    }
 }
 
 .card{
-
+   border-radius: 32px;
+   padding: 24px 32px;
+    
+    
 
     &__text{
         font-size: 20px;
         text-align: center;
-        color: var(--beauty-landing-2-background);
+        color: #000;
         @media screen and (min-width:768px) {
             font-size: 22px;
         }
+    }
+
+    &__icon{
+        display: block;
+        margin-bottom: 8px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
