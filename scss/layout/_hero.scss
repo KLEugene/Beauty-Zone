@@ -1,6 +1,8 @@
 .hero {
   padding: 72px 20px;
-  background-image: url('../images/hero.jpg');
+ 
+  background:  url('../images/hero.jpg'), linear-gradient(94deg, #fff 9.65%, rgba(255, 255, 255, 0.85) 26.08%, rgba(255, 255, 255, 0.19) 52.74%, rgba(255, 255, 255, 0) 74.46%);
+   mask-image: url('../images/mask-hero.svg');
   background-repeat: no-repeat;
   background-size: cover;
   @media screen and (min-width: 768px) {

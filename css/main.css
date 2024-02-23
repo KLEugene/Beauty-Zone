@@ -177,14 +177,30 @@ a:hover {
 @media screen and (min-width: 768px) {
   .header {
     padding: 32px 100px;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.25);
   }
 }
 .header__container {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (min-width: 768px) {
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0.5;
+  }
+}
 .header__menu {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .header__menu {
+    display: flex;
+    gap: 56px;
+  }
 }
 .header__burger {
   background-color: transparent;
@@ -198,9 +214,18 @@ a:hover {
 .header__social {
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .header__social {
+    display: flex;
+    gap: 32px;
+  }
+}
+
 .hero {
   padding: 72px 20px;
-  background-image: url("../images/hero.jpg");
+  background: url("../images/hero.jpg"), linear-gradient(94deg, #fff 9.65%, rgba(255, 255, 255, 0.85) 26.08%, rgba(255, 255, 255, 0.19) 52.74%, rgba(255, 255, 255, 0) 74.46%);
+  -webkit-mask-image: url("../images/mask-hero.svg");
+          mask-image: url("../images/mask-hero.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
