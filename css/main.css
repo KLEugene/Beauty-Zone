@@ -102,6 +102,53 @@ a:hover {
   text-align: center;
 }
 
+.slider-cards {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .slider-cards {
+    gap: 16px;
+  }
+}
+.slider-cards__card {
+  position: relative;
+  width: 320px;
+  height: 416px;
+  overflow: hidden;
+  border-radius: 110px 4px;
+  padding: 344px 72px 24px 112px;
+  background-image: linear-gradient(180deg, rgba(1, 28, 68, 0) 47.4%, rgba(1, 28, 68, 0.73) 82.66%, #011c44 99.06%);
+}
+@media screen and (min-width: 768px) {
+  .slider-cards__card {
+    width: 344px;
+    height: 456px;
+    border-radius: 120px 4px;
+    padding: 372px 76px 32px 116px;
+  }
+}
+.slider-cards__text {
+  font-size: 20px;
+  line-height: 118%;
+  text-align: center;
+  color: var(--beauty-landing-2-background);
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .slider-cards__text {
+    font-size: 22px;
+  }
+}
+.slider-cards__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 .card-list {
   display: flex;
   flex-direction: column;

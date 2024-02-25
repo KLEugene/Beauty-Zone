@@ -19,39 +19,37 @@
   <body>
     <header class="header">
       <div class="header__container">
-        
-          <nav class="header__nav">
-            <a href="/" class="logo">Beauty <br />Zone</a>
-            <ul class="header__menu list">
-              <li><a href="#preview">Про нас</a></li>
-              <li><a href="#achievments">Чому ми</a></li>
-              <li><a href="#our-servises">Наші процедури</a></li>
-              <li><a href="#contacts">Контакти</a></li>
-            </ul>
-          </nav>
-          <div class="header__social">
-            <a href="tel:+380960000007">
-              <svg class="" width="40" height="40">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-            </a>
-            <a href="#">
-              <svg class="" width="40" height="40">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-            <a href="#">
-              <svg class="" width="40" height="40">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </div>
-          <button type="button" class="header__burger">
-            <svg width="24" height="24">
-              <use href="./images/icons.svg#icon-burger"></use>
+        <nav class="header__nav">
+          <a href="/" class="logo">Beauty <br />Zone</a>
+          <ul class="header__menu list">
+            <li><a href="#preview">Про нас</a></li>
+            <li><a href="#achievments">Чому ми</a></li>
+            <li><a href="#our-servises">Наші процедури</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+          </ul>
+        </nav>
+        <div class="header__social">
+          <a href="tel:+380960000007">
+            <svg class="" width="40" height="40">
+              <use href="./images/icons.svg#icon-phone"></use>
             </svg>
-          </button>
-        
+          </a>
+          <a href="#">
+            <svg class="" width="40" height="40">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="" width="40" height="40">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </div>
+        <button type="button" class="header__burger">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -138,10 +136,19 @@
         <h2 class="title-text title-center our-servises__title">
           Наші <span class="text-color">процедури</span>
         </h2>
-        <ul class="list">
-          <li class=""><p class="">Маски для обличчя</p></li>
-          <li class=""><p class="">Ін'єкції для обличчя</p></li>
-          <li class=""><p class="">Очищення обличчя</p></li>
+        <ul class="list slider-cards">
+          <li class="slider-cards__card">
+            <p class="slider-cards__text">Маски для обличчя</p>
+            <img src="./images/slider1.jpg" class="slider-cards__image" alt="slide1" />
+          </li>
+          <li class="slider-cards__card">
+            <p class="slider-cards__text">Ін'єкції для обличчя</p>
+            <img src="./images/slider2.jpg" class="slider-cards__image" alt="slide2" />
+          </li>
+          <li class="slider-cards__card">
+            <p class="slider-cards__text">Очищення обличчя</p>
+            <img src="./images/slider3.jpg" class="slider-cards__image" alt="slide3" />
+          </li>
         </ul>
       </section>
       <section id="contacts">
