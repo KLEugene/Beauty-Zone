@@ -1,13 +1,22 @@
 .hero {
   padding: 72px 20px;
- 
-  background:  url('../images/hero.jpg'), linear-gradient(94deg, #fff 9.65%, rgba(255, 255, 255, 0.85) 26.08%, rgba(255, 255, 255, 0.19) 52.74%, rgba(255, 255, 255, 0) 74.46%);
-   mask-image: url('../images/mask-hero.svg');
+  mask-image: url("../images/mask-hero-mobile.svg");
+  mask-size: 100% 100%;
+  mask-clip: border-box;
+  background: linear-gradient(
+      94deg,
+      #fff 9.65%,
+      rgba(255, 255, 255, 0.85) 26.08%,
+      rgba(255, 255, 255, 0.19) 52.74%,
+      rgba(255, 255, 255, 0) 74.46%
+    ),
+    url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   @media screen and (min-width: 768px) {
-  padding: 122px;
-  
+    padding: 122px;
+    mask-image: url("../images/mask_hero.svg");
+    margin-bottom: 80px;
   }
 
   &__descrition {
@@ -44,17 +53,17 @@
     }
   }
 
-  &__container{
+  &__container {
     padding-left: 20px;
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
       padding-left: 206px;
       width: 530px;
     }
   }
 
-  &__block{
+  &__block {
     width: 186px;
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
       width: 220px;
     }
   }

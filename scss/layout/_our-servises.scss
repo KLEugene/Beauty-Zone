@@ -1,6 +1,7 @@
 .our-servises {
   @media screen and (min-width:768px) {
     padding: 0 112px;
+    margin-bottom: 140px;
   }
     &__slider {
     
@@ -9,6 +10,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 32px;
+
       
     }
   }

@@ -1,0 +1,20 @@
+.contacts{
+  
+    
+    &__title{
+        margin-bottom: 24px;
+        @media screen and (min-width:768px) {
+            margin-bottom: 48px;
+        }
+    }
+
+      &__wrapper{
+        display: flex;
+        gap: 24px;
+        flex-direction: column-reverse;
+        @media screen and (min-width:768px) {
+            gap: 32px;
+            flex-direction: row;
+        }
+      } 
+}
