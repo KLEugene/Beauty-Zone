@@ -241,12 +241,38 @@ a:hover {
   padding: 42px 24px;
   display: flex;
   flex-direction: column;
+  width: 320px;
 }
 @media screen and (min-width: 768px) {
   .contacts-form {
     padding: 48px 56px;
+    width: 422px;
   }
 }
+.contacts-form__title {
+  margin-bottom: 24px;
+}
+.contacts-form__input {
+  margin-bottom: 16px;
+  background-color: inherit;
+  color: var(--beauty-landing-2-background);
+  padding: 16px 24px;
+  border: 1.5px solid var(--beauty-landing-2-s5);
+  border-radius: 24px;
+}
+.contacts-form__input:focus {
+  outline: none;
+}
+.contacts-form__button {
+  margin-bottom: 8px;
+}
+.contacts-form__agree {
+  line-height: 150%;
+  text-align: center;
+  color: var(--beauty-landing-2-s5);
+  font-size: 12px;
+}
+
 .button {
   border-radius: 24px;
   padding: 16px 24px;
@@ -394,6 +420,10 @@ a:hover {
   }
 }
 
+.footer {
+  background: var(--beauty-landing-2-c1);
+}
+
 .achievements {
   margin-bottom: 96px;
 }
@@ -477,6 +507,16 @@ a:hover {
   }
 }
 
+.contacts {
+  padding: 0 20px;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    padding: 0 205px;
+    margin-bottom: 96px;
+  }
+}
 .contacts__title {
   margin-bottom: 24px;
 }
@@ -486,13 +526,33 @@ a:hover {
   }
 }
 .contacts__wrapper {
+  position: relative;
   display: flex;
   gap: 24px;
+  align-items: center;
   flex-direction: column-reverse;
+  padding-bottom: 256px;
 }
 @media screen and (min-width: 768px) {
   .contacts__wrapper {
     gap: 32px;
     flex-direction: row;
+    padding-bottom: 0;
+  }
+}
+.contacts__map {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 232px;
+  overflow: auto;
+}
+@media screen and (min-width: 768px) {
+  .contacts__map {
+    position: static;
+    border-radius: 32px;
+    width: 606px;
+    height: 482px;
   }
 }/*# sourceMappingURL=main.css.map */
