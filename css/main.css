@@ -344,6 +344,9 @@ a:hover {
     gap: 32px;
   }
 }
+.header__social-icons {
+  fill: #011C44;
+}
 
 .hero {
   padding: 72px 20px;
@@ -422,8 +425,37 @@ a:hover {
 
 .footer {
   background: var(--beauty-landing-2-c1);
+  color: var(--beauty-landing-2-background);
+  display: flex;
+  flex-direction: column;
+  padding: 32px 91px 66px;
+  align-items: center;
+  justify-content: space-between;
 }
-
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    padding: 56px 100px;
+    align-items: flex-start;
+  }
+}
+.footer__address {
+  color: var(--beauty-landing-2-background);
+  font-style: normal;
+}
+.footer__link {
+  color: var(--beauty-landing-2-background);
+}
+.footer__social-icons {
+  fill: white;
+}
+.footer__agree {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--beauty-landing-2-s5);
+}
 .achievements {
   margin-bottom: 96px;
 }

@@ -1,3 +1,45 @@
-.footer{
-    background: var(--beauty-landing-2-c1);
+.footer {
+  background: var(--beauty-landing-2-c1);
+  color: var(--beauty-landing-2-background);
+  display: flex;
+  flex-direction: column;
+  padding: 32px 91px 66px;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    padding: 56px 100px;
+    align-items: flex-start;
+  }
+  &__logo {
+  }
+
+  &__menu {
+  }
+
+  &__address {
+    color: var(--beauty-landing-2-background);
+    font-style: normal;
+  }
+  &__social {
+  }
+
+  &__link {
+    color: var(--beauty-landing-2-background);
+  }
+
+  &__social-icons {
+    fill: white;
+  }
+
+  &__agree {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: var(--beauty-landing-2-s5);
+  }
+
+  &__policy {
+  }
 }
