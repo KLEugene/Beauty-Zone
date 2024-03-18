@@ -431,20 +431,56 @@ a:hover {
   padding: 32px 91px 66px;
   align-items: center;
   justify-content: space-between;
+  gap: 16px;
 }
 @media screen and (min-width: 768px) {
   .footer {
     flex-direction: row;
     padding: 56px 100px;
     align-items: flex-start;
+    justify-content: space-between;
   }
+}
+.footer__logo {
+  margin-bottom: 26px;
+}
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    margin-bottom: 0;
+  }
+}
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 .footer__address {
   color: var(--beauty-landing-2-background);
   font-style: normal;
 }
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.footer__social {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__social {
+    gap: 24px;
+  }
+}
 .footer__link {
   color: var(--beauty-landing-2-background);
+}
+.footer__link-text {
+  margin-bottom: 0;
 }
 .footer__social-icons {
   fill: white;
@@ -456,6 +492,13 @@ a:hover {
   line-height: 150%;
   color: var(--beauty-landing-2-s5);
 }
+.footer__policy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
 .achievements {
   margin-bottom: 96px;
 }

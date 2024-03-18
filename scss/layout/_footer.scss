@@ -6,26 +6,58 @@
   padding: 32px 91px 66px;
   align-items: center;
   justify-content: space-between;
+  gap: 16px;
   @media screen and (min-width: 768px) {
     flex-direction: row;
     padding: 56px 100px;
     align-items: flex-start;
+    justify-content: space-between;
   }
   &__logo {
+    margin-bottom: 26px;
+    @media screen and (min-width:768px) {
+      margin-bottom: 0;
+    }
   }
 
   &__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
   }
 
   &__address {
+    
     color: var(--beauty-landing-2-background);
     font-style: normal;
+    
+    
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
   }
   &__social {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    @media screen and (min-width:768px) {
+      gap: 24px;
+    }
   }
 
   &__link {
     color: var(--beauty-landing-2-background);
+
+  }
+
+  &__link-text{
+    margin-bottom: 0;
   }
 
   &__social-icons {
@@ -41,5 +73,9 @@
   }
 
   &__policy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
   }
 }
