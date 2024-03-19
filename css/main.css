@@ -35,6 +35,7 @@ a {
   display: inline-block;
   color: var(--beauty-landing-2-c1);
   text-decoration: none;
+  transition: color 300ms;
 }
 a:hover {
   color: var(--beauty-landing-2-s2);
@@ -427,6 +428,7 @@ a:hover {
   background: var(--beauty-landing-2-c1);
   color: var(--beauty-landing-2-background);
   display: flex;
+  position: relative;
   flex-direction: column;
   padding: 32px 91px 66px;
   align-items: center;
@@ -439,6 +441,16 @@ a:hover {
     padding: 56px 100px;
     align-items: flex-start;
     justify-content: space-between;
+  }
+  .footer::after {
+    content: "";
+    position: absolute;
+    background-image: url(./../../images/farmacy.png);
+    width: 248px;
+    height: 152px;
+    right: 0px;
+    bottom: 0px;
+    background-repeat: no-repeat;
   }
 }
 .footer__logo {
@@ -455,7 +467,13 @@ a:hover {
   align-items: center;
   gap: 16px;
 }
+@media screen and (min-width: 768px) {
+  .footer__menu {
+    align-items: start;
+  }
+}
 .footer__address {
+  max-width: 192px;
   color: var(--beauty-landing-2-background);
   font-style: normal;
 }
@@ -466,6 +484,11 @@ a:hover {
   gap: 16px;
   margin-bottom: 16px;
 }
+@media screen and (min-width: 768px) {
+  .footer__list {
+    align-items: start;
+  }
+}
 .footer__social {
   display: flex;
   gap: 20px;
@@ -474,16 +497,28 @@ a:hover {
 @media screen and (min-width: 768px) {
   .footer__social {
     gap: 24px;
+    justify-content: start;
   }
 }
 .footer__link {
   color: var(--beauty-landing-2-background);
+}
+.footer__link-address {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__link-address {
+    text-align: start;
+  }
 }
 .footer__link-text {
   margin-bottom: 0;
 }
 .footer__social-icons {
   fill: white;
+}
+.footer__social-icons :hover {
+  fill: var(--beauty-landing-2-s2);
 }
 .footer__agree {
   font-family: var(--font-family);
@@ -497,6 +532,11 @@ a:hover {
   flex-direction: column;
   align-items: center;
   gap: 16px;
+}
+@media screen and (min-width: 768px) {
+  .footer__policy {
+    align-items: start;
+  }
 }
 
 .achievements {

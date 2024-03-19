@@ -2,6 +2,7 @@
   background: var(--beauty-landing-2-c1);
   color: var(--beauty-landing-2-background);
   display: flex;
+  position: relative;
   flex-direction: column;
   padding: 32px 91px 66px;
   align-items: center;
@@ -12,10 +13,20 @@
     padding: 56px 100px;
     align-items: flex-start;
     justify-content: space-between;
+    &::after{
+      content: "";
+      position: absolute;
+      background-image: url(./../../images/farmacy.png);
+      width: 248px;
+      height: 152px;
+      right: 0px;
+      bottom: 0px;
+      background-repeat: no-repeat;
+    }
   }
   &__logo {
     margin-bottom: 26px;
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
       margin-bottom: 0;
     }
   }
@@ -25,43 +36,57 @@
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    @media screen and (min-width: 768px) {
+      align-items: start;
+    }
   }
 
   &__address {
-    
+    max-width: 192px;
     color: var(--beauty-landing-2-background);
     font-style: normal;
-    
-    
   }
 
-  &__list{
+  &__list {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
     margin-bottom: 16px;
+    @media screen and (min-width: 768px) {
+      align-items: start;
+    }
   }
   &__social {
     display: flex;
     gap: 20px;
     justify-content: center;
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
       gap: 24px;
+      justify-content: start;
     }
   }
 
   &__link {
     color: var(--beauty-landing-2-background);
-
   }
 
-  &__link-text{
+  &__link-address{
+    text-align: center;
+    @media screen and (min-width:768px) {
+      text-align: start;
+    }
+  }
+
+  &__link-text {
     margin-bottom: 0;
   }
 
   &__social-icons {
     fill: white;
+    :hover{
+      fill: var(--beauty-landing-2-s2);
+    }
   }
 
   &__agree {
@@ -77,5 +102,8 @@
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    @media screen and (min-width: 768px) {
+      align-items: start;
+    }
   }
 }
