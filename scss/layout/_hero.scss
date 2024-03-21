@@ -19,11 +19,13 @@
     margin-bottom: 80px;
   }
 
-  &__descrition {
+  &__description {
     font-size: 12px;
     line-height: 150%;
+    text-align: center;
     @media screen and (min-width: 768px) {
       font-size: 18px;
+      text-align: left;
     }
   }
 
@@ -63,8 +65,11 @@
 
   &__block {
     width: 186px;
+    margin-left: auto;
+    margin-right: auto;
     @media screen and (min-width: 768px) {
       width: 220px;
+      margin-left: 0;
     }
   }
 }

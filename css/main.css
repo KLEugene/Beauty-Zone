@@ -369,13 +369,15 @@ a:hover {
     margin-bottom: 80px;
   }
 }
-.hero__descrition {
+.hero__description {
   font-size: 12px;
   line-height: 150%;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
-  .hero__descrition {
+  .hero__description {
     font-size: 18px;
+    text-align: left;
   }
 }
 .hero__text {
@@ -417,10 +419,13 @@ a:hover {
 }
 .hero__block {
   width: 186px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .hero__block {
     width: 220px;
+    margin-left: 0;
   }
 }
 
@@ -575,7 +580,18 @@ a:hover {
 @media screen and (min-width: 768px) {
   .preview__container {
     display: flex;
+    position: relative;
     gap: 32px;
+  }
+  .preview__container::after {
+    content: "";
+    position: absolute;
+    top: 280px;
+    right: 180px;
+    width: 16px;
+    height: 16px;
+    background-image: url(./../../images/star-3.svg);
+    background-repeat: no-repeat;
   }
 }
 .preview__images {
@@ -584,7 +600,28 @@ a:hover {
 @media screen and (min-width: 768px) {
   .preview__images {
     display: block;
+    position: relative;
     width: 500px;
+  }
+  .preview__images::after {
+    content: "";
+    position: absolute;
+    top: 360px;
+    left: 120px;
+    width: 64px;
+    height: 64px;
+    background-image: url(./../../images/star-1.svg);
+    background-repeat: no-repeat;
+  }
+  .preview__images::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 480px;
+    width: 40px;
+    height: 40px;
+    background-image: url(./../../images/star-2.svg);
+    background-repeat: no-repeat;
   }
 }
 .preview__imgsize {
