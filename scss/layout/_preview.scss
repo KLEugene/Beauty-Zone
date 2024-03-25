@@ -1,7 +1,6 @@
 .preview {
- margin-bottom: 176px;
- 
- 
+  margin-bottom: 176px;
+
   &__accent {
     font-weight: 700;
   }
@@ -11,17 +10,30 @@
       display: flex;
       position: relative;
       gap: 32px;
-     &::after{
-      content: "";
-      position: absolute;
-      top:280px;
-      right:180px;
-      width: 16px;
-      height: 16px;
-      background-image: url(./../../images/star-3.svg);
-      background-repeat: no-repeat;
-     }
-      
+      &::after {
+        content: "";
+        position: absolute;
+        top: 280px;
+        right: 180px;
+        width: 16px;
+        height: 16px;
+        background-image: url(./../../images/star-3.svg);
+        background-repeat: no-repeat;
+        animation-duration: 3s;
+        animation-name: star3;
+        animation-iteration-count: infinite;
+        animation-delay:1s;
+        /* transform: scale(5x)rotate(90deg);
+      transition: all; */
+      }
+    }
+  }
+  @keyframes star3 {
+    from {
+      transform: scale(0.1);
+    }
+    to {
+      transform: scale(1);
     }
   }
 
@@ -31,26 +43,49 @@
       display: block;
       position: relative;
       width: 500px;
-      &::after{
+      &::after {
         content: "";
         position: absolute;
-        top:360px;
-        left:120px;
+        top: 360px;
+        left: 120px;
         width: 64px;
         height: 64px;
         background-image: url(./../../images/star-1.svg);
         background-repeat: no-repeat;
+        animation-duration: 3s;
+        animation-name: star1;
+        animation-iteration-count: infinite;
       }
-      &::before{
+      &::before {
         content: "";
         position: absolute;
-        top:20px;
-        left:480px;
+        top: 20px;
+        left: 480px;
         width: 40px;
         height: 40px;
         background-image: url(./../../images/star-2.svg);
         background-repeat: no-repeat;
+        animation-duration: 3s;
+        animation-name: star2;
+        animation-iteration-count: infinite;
+        animation-delay:0.5s;
       }
+    }
+  }
+  @keyframes star2 {
+    from {
+      transform: scale(0.1) rotate(0);
+    }
+    to {
+      transform: scale(1) rotate(90deg);
+    }
+  }
+  @keyframes star1 {
+    from {
+      transform: scale(0.1) rotate(0);
+    }
+    to {
+      transform: scale(1) rotate(-90deg);
     }
   }
 
@@ -60,37 +95,34 @@
     border-radius: 50%;
   }
 
-  &__imgsize.left{
+  &__imgsize.left {
     margin-bottom: 40px;
-    
   }
 
-  &__imgsize.right{
+  &__imgsize.right {
     margin-left: auto;
     margin-right: 0;
   }
 
-  &__text{
+  &__text {
     margin-bottom: 16px;
-    @media screen and (min-width:768px) {
-        margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 40px;
     }
   }
 
-  &__title{
+  &__title {
     margin-bottom: 24px;
-    
-    @media screen and (min-width:768px) {
-        margin-bottom: 40px;
 
+    @media screen and (min-width: 768px) {
+      margin-bottom: 40px;
     }
   }
 
-  &__preview{
-    @media screen and (min-width:768px) {
-         width: 710px;
-         padding-top: 40px;
+  &__preview {
+    @media screen and (min-width: 768px) {
+      width: 710px;
+      padding-top: 40px;
     }
   }
 }
-

@@ -592,6 +592,20 @@ a:hover {
     height: 16px;
     background-image: url(./../../images/star-3.svg);
     background-repeat: no-repeat;
+    animation-duration: 3s;
+    animation-name: star3;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    /* transform: scale(5x)rotate(90deg);
+    transition: all; */
+  }
+}
+@keyframes star3 {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
   }
 }
 .preview__images {
@@ -612,6 +626,9 @@ a:hover {
     height: 64px;
     background-image: url(./../../images/star-1.svg);
     background-repeat: no-repeat;
+    animation-duration: 3s;
+    animation-name: star1;
+    animation-iteration-count: infinite;
   }
   .preview__images::before {
     content: "";
@@ -622,6 +639,26 @@ a:hover {
     height: 40px;
     background-image: url(./../../images/star-2.svg);
     background-repeat: no-repeat;
+    animation-duration: 3s;
+    animation-name: star2;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+  }
+}
+@keyframes star2 {
+  from {
+    transform: scale(0.1) rotate(0);
+  }
+  to {
+    transform: scale(1) rotate(90deg);
+  }
+}
+@keyframes star1 {
+  from {
+    transform: scale(0.1) rotate(0);
+  }
+  to {
+    transform: scale(1) rotate(-90deg);
   }
 }
 .preview__imgsize {
