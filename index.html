@@ -247,14 +247,23 @@
         <li><a href="#our-servises" class="footer__link">Наші процедури</a></li>
         <li><a href="#contacts" class="footer__link">Контакти</a></li>
       </ul>
-      <address class="footer__address ">
+      <address class="footer__address">
         <ul class="list footer__list">
-          <li><a href="tel:+380960000007" class="link footer__link">+38 (096)000 00 07</a></li>
           <li>
-            <a href="mailto:beautyzone@gmail.com" class="link footer__link">beautyzone@gmail.com</a>
+            <a href="tel:+380960000007" class="link footer__link"
+              >+38 (096)000 00 07</a
+            >
           </li>
           <li>
-            <a href="https://maps.app.goo.gl/gB1aeAkSMVpX93CS6" target="_blank" class="link footer__link footer__link-address"
+            <a href="mailto:beautyzone@gmail.com" class="link footer__link"
+              >beautyzone@gmail.com</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://maps.app.goo.gl/gB1aeAkSMVpX93CS6"
+              target="_blank"
+              class="link footer__link footer__link-address"
               >Україна, м. Київ, вул. Тараса Шевченка 5</a
             >
           </li>
@@ -278,9 +287,62 @@
         </div>
       </address>
       <div class="footer__policy">
-        <a href="#" class="footer__link"><p class="footer__link-text">Політика конфіденційності</p></a>
+        <a href="#" class="footer__link"
+          ><p class="footer__link-text">Політика конфіденційності</p></a
+        >
         <p class="footer__agree">© 2022 Дані захищені</p>
       </div>
     </footer>
+    <div class="backdrop modal">
+      <div class="modal__content">
+        <button
+          type="button"
+          class="icon-button mobile-menu__button--close"
+          data-modal-close
+        >
+          <svg width="24" heihgt="24">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">Замовити дзвінок</h2>
+        <p class="modal__feedback">
+          Запишіться <span class="text-color">безкоштовно</span> та отримайте подарунок
+        </p>
+        <form class="modal__form">
+          <label for="name"></label
+          ><input
+            id="name"
+            name="name"
+            class="modal__input"
+            placeholder="Ваше ім'я та прізвище"
+          />
+          <label for="phone"></label
+          ><input
+            id="phone"
+            name="phone"
+            class="modal__input"
+            placeholder="Ваш номер телефону"
+          />
+          <label for="email"></label
+          ><input
+            id="email"
+            name="email"
+            class="modal__input"
+            placeholder="Ваша електронна пошта"
+          />
+          <button
+            type="button"
+            class="button modal__button"
+            data-modal-close
+          >
+            Записатись безкоштовно
+          </button>
+          <p class="modal__policy">
+            Натискаючи на кнопку я погоджуюсь з
+            <a class="link" href="#">політикою конфіденційності</a>
+          </p>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
