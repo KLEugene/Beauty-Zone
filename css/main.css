@@ -291,6 +291,18 @@ a:hover {
   }
 }
 
+.button-close {
+  position: absolute;
+  padding: 0;
+  top: 42px;
+  right: 42px;
+  margin-bottom: 0;
+  background-color: inherit;
+  width: 32px;
+  height: 32px;
+  border: none;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -310,12 +322,18 @@ a:hover {
 
 @media screen and (min-width: 768px) {
   .modal__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
     border-radius: 48px;
     width: 724px;
     height: 682px;
     background: var(--beauty-landing-2-c1);
     padding: 42px 206px;
-    position: relative;
+  }
+  .backdrop.is-hidden .modal__content {
+    transform: translate(-50%, -50%) scale(0.8);
   }
   .modal__title {
     font-family: var(--third-family);
@@ -366,6 +384,7 @@ a:hover {
     text-decoration: underline;
     -webkit-text-decoration-skip-ink: none;
             text-decoration-skip-ink: none;
+    color: var(--beauty-landing-2-s5);
   }
 }
 
