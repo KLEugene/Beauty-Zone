@@ -1,0 +1,14 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #e4e4e4;
+  &__close > svg{
+    
+    stroke-width: 2px;
+    stroke: var(--beauty-landing-2-c1);
+
+  }
+}

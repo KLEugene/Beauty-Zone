@@ -297,7 +297,7 @@ a:hover {
   top: 42px;
   right: 42px;
   margin-bottom: 0;
-  background-color: inherit;
+  background-color: transparent;
   width: 32px;
   height: 32px;
   border: none;
@@ -524,6 +524,19 @@ a:hover {
     width: 220px;
     margin-left: 0;
   }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #e4e4e4;
+}
+.mobile-menu__close > svg {
+  stroke-width: 2px;
+  stroke: var(--beauty-landing-2-c1);
 }
 
 .footer {
