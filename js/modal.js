@@ -1,5 +1,5 @@
 const refModal = document.querySelector(".modal");
-const refBtnClose = document.querySelector(".button-close");
+const refBtnClose = document.querySelector("[data-modal-close]");
 const refBtnSubmit = document.querySelector(".modal__button");
 const refBtnOpen =document.querySelector("[data-modal-open]")
 

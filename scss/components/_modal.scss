@@ -76,6 +76,10 @@
     &__button {
         margin-bottom: 8px;
     }
+    &__close >svg{
+      stroke:#fff;
+
+    }
     &__policy {
       font-family: var(--font-family);
       font-weight: 400;
