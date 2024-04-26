@@ -1,0 +1,22 @@
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    @media screen and (min-width:768px) {
+            display: none;
+    }
+    
+    &__button{
+    border-radius: 50%;
+    
+
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+    background-color: var(--beauty-landing-2-s5);
+}
+&__button--active{
+    background: var(--beauty-landing-2-s2);
+}
+}

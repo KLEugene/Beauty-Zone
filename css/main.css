@@ -128,7 +128,6 @@ a:hover {
 
 .slider-cards {
   display: flex;
-  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .slider-cards {
@@ -186,6 +185,10 @@ a:hover {
   padding: 0;
   stroke-width: 2px;
   stroke: var(--beauty-landing-2-c1);
+}
+
+.next {
+  transform: rotate(180deg);
 }
 
 .card-list {
@@ -301,6 +304,28 @@ a:hover {
   width: 32px;
   height: 32px;
   border: none;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .pagination {
+    display: none;
+  }
+}
+.pagination__button {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  background-color: var(--beauty-landing-2-s5);
+}
+.pagination__button--active {
+  background: var(--beauty-landing-2-s2);
 }
 
 .backdrop {
@@ -708,6 +733,7 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     gap: 32px;
+    margin-bottom: 32px;
   }
 }
 

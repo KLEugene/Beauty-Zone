@@ -1,6 +1,6 @@
 .slider-cards {
   display: flex;
-  justify-content: center;
+  
   @media screen and (min-width: 768px) {
     gap: 16px;
   }
@@ -61,3 +61,7 @@
   stroke-width: 2px;
   stroke: var(--beauty-landing-2-c1);
 }
+
+.next{
+        transform: rotate(180deg);
+    }
