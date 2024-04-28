@@ -127,7 +127,7 @@ a:hover {
 }
 
 .slider-cards {
-  display: flex;
+  margin-bottom: 32px;
 }
 @media screen and (min-width: 768px) {
   .slider-cards {
@@ -177,6 +177,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  flex-shrink: 0;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -306,25 +307,20 @@ a:hover {
   border: none;
 }
 
-.pagination {
+.swiper-pagination {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
-@media screen and (min-width: 768px) {
-  .pagination {
-    display: none;
-  }
-}
-.pagination__button {
+.swiper-pagination__button {
   border-radius: 50%;
   width: 12px;
   height: 12px;
   flex-shrink: 0;
   background-color: var(--beauty-landing-2-s5);
 }
-.pagination__button--active {
+.swiper-pagination__button--active {
   background: var(--beauty-landing-2-s2);
 }
 
@@ -731,9 +727,7 @@ a:hover {
   .our-servises__slider {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 32px;
-    margin-bottom: 32px;
   }
 }
 

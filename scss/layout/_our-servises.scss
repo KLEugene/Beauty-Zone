@@ -1,16 +1,13 @@
 .our-servises {
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding: 0 112px;
     margin-bottom: 140px;
   }
-    &__slider {
-    
+  &__slider {
     @media screen and (min-width: 768px) {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      gap: 32px; 
-      margin-bottom: 32px;     
+      gap: 32px;
     }
   }
 }

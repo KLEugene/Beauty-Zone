@@ -20,7 +20,7 @@ const swiper = new Swiper(".swiper", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".next",
-    prevEl: ".prev",
+    nextEl: ".slide-arrow.next",
+    prevEl: ".slide-arrow.prev",
   },
 });
