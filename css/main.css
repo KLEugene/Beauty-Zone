@@ -98,12 +98,50 @@ a:hover {
   content: "";
   position: absolute;
   bottom: 0;
+  z-index: -2;
   left: 0;
   width: 100%;
   height: 1300px;
   background-size: 100% auto;
   background-image: url("../../images/background.svg");
   background-repeat: no-repeat;
+}
+
+.button {
+  border-radius: 24px;
+  padding: 12px 24px;
+  border: 2px solid var(--beauty-landing-2-s2);
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--beauty-landing-2-c1);
+  font-family: var(--second-family);
+  margin-bottom: 8px;
+  transition: color 300ms;
+}
+.button:hover {
+  border: 2px solid var(--beauty-landing-2-s2);
+  color: var(--beauty-landing-2-background);
+  background: var(--beauty-landing-2-s2);
+}
+@media screen and (min-width: 768px) {
+  .button {
+    margin-bottom: 14px;
+    font-size: 18px;
+  }
+}
+
+.button-close {
+  position: absolute;
+  padding: 0;
+  top: 42px;
+  right: 42px;
+  margin-bottom: 0;
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  border: none;
 }
 
 .title-text {
@@ -128,15 +166,11 @@ a:hover {
 
 .slider-cards {
   margin-bottom: 32px;
-}
-@media screen and (min-width: 768px) {
-  .slider-cards {
-    gap: 16px;
-  }
+  /* gap: 16px; */
 }
 .slider-cards__card {
   position: relative;
-  width: 320px;
+  max-width: 320px;
   height: 416px;
   overflow: hidden;
   border-radius: 110px 4px;
@@ -145,7 +179,7 @@ a:hover {
 }
 @media screen and (min-width: 768px) {
   .slider-cards__card {
-    width: 344px;
+    max-width: 344px;
     height: 456px;
     border-radius: 120px 4px;
     padding: 372px 76px 32px 116px;
@@ -173,19 +207,29 @@ a:hover {
 }
 
 .slide-arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  flex-shrink: 0;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: transparent;
-  border: 0.77px solid var(--beauty-landing-2-c1);
-  padding: 0;
-  stroke-width: 2px;
-  stroke: var(--beauty-landing-2-c1);
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .slide-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: transparent;
+    border: 0.77px solid var(--beauty-landing-2-c1);
+    padding: 0;
+    stroke-width: 2px;
+    fill: var(--beauty-landing-2-c1);
+  }
+  .slide-arrow:hover {
+    border: none;
+    fill: var(--beauty-landing-2-background);
+    background-color: var(--beauty-landing-2-s2);
+  }
 }
 
 .next {
@@ -270,41 +314,13 @@ a:hover {
 }
 .contacts-form__button {
   margin-bottom: 8px;
+  color: var(--beauty-landing-2-background);
 }
 .contacts-form__agree {
   line-height: 150%;
   text-align: center;
   color: var(--beauty-landing-2-s5);
   font-size: 12px;
-}
-
-.button {
-  border-radius: 24px;
-  padding: 16px 24px;
-  border: none;
-  background: var(--beauty-landing-2-s2);
-  font-weight: 600;
-  font-size: 16px;
-  color: var(--beauty-landing-2-background);
-  margin-bottom: 8px;
-}
-@media screen and (min-width: 768px) {
-  .button {
-    margin-bottom: 14px;
-    font-size: 18px;
-  }
-}
-
-.button-close {
-  position: absolute;
-  padding: 0;
-  top: 42px;
-  right: 42px;
-  margin-bottom: 0;
-  background-color: transparent;
-  width: 32px;
-  height: 32px;
-  border: none;
 }
 
 .swiper-pagination {
@@ -392,6 +408,7 @@ a:hover {
   }
   .modal__button {
     margin-bottom: 8px;
+    color: var(--beauty-landing-2-background);
   }
   .modal__close > svg {
     stroke: #fff;
@@ -717,6 +734,9 @@ a:hover {
   }
 }
 
+.our-servises {
+  padding: 0 20px;
+}
 @media screen and (min-width: 768px) {
   .our-servises {
     padding: 0 112px;

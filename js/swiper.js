@@ -1,6 +1,7 @@
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   slidesPerView: 1,
+  spaceBetween:16,
   breakpoints: {
     768: {
       slidesPerView: 2,
